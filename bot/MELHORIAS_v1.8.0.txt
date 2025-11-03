@@ -1,0 +1,145 @@
+═══════════════════════════════════════════════════════════
+    BOT SUNFLOWER LAND - MELHORIAS VERSÃO 1.8.0
+═══════════════════════════════════════════════════════════
+
+📅 Data: Novembro 2024
+👤 Desenvolvedor: gu2121gg
+
+═══════════════════════════════════════════════════════════
+    🎯 MELHORIAS IMPLEMENTADAS
+═══════════════════════════════════════════════════════════
+
+1️⃣ FECHAMENTO AUTOMÁTICO DE CAPTCHA MELHORADO
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   ✅ Função closePuzzleDialog() completamente reformulada
+   ✅ 4 métodos diferentes de fechamento implementados:
+      
+      Método 1: Procura botão "Close" padrão
+      Método 2: Procura botão X com aria-label="close"
+      Método 3: Procura imagem de botão close
+      Método 4: Simula tecla ESC para fechar dialogs
+   
+   ✅ Sistema de tentativas múltiplas:
+      - Tenta fechar após 500ms
+      - Segunda tentativa após 1000ms
+      - Terceira tentativa após 1500ms
+   
+   ✅ Feedback visual com notificações de sucesso
+   ✅ Aplicado em todas as funções de solver:
+      - solveChest()
+      - solveOtherPuzzle()
+      - solveGoblins()
+
+2️⃣ SISTEMA DE AUTO COZINHA OTIMIZADO
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   🍳 Nova função closeFirePitDialog() criada
+      
+   🔥 Fechamento automático da fogueira após:
+      - Iniciar cozimento
+      - Coletar receita pronta
+      - Detectar erro ou falta de ingredientes
+   
+   📊 Notificações melhoradas com emojis:
+      ✅ "✅ Coletado: [Receita]"
+      🔥 "🔥 Cozinhando: [Receita]"
+      ⏰ "⏰ Cozimento finalizado!"
+      ⚠️ "⚠️ Não é possível cozinhar"
+   
+   ⚡ Melhor detecção de estados:
+      - Detecta se pode coletar
+      - Detecta se pode cozinhar
+      - Detecta falta de ingredientes
+      - Tempo de cozimento arredondado
+   
+   🎯 Fluxo otimizado:
+      1. Abre fogueira
+      2. Verifica receita
+      3. Coleta/Cozinha
+      4. FECHA A JANELA automaticamente
+      5. Aguarda tempo de cozimento
+      6. Repete o ciclo
+
+3️⃣ MELHORIAS GERAIS
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   ✨ Múltiplos métodos de fechamento para maior confiabilidade
+   🎨 Interface mais limpa com dialogs fechando automaticamente
+   🐛 Correção de bugs de dialogs que ficavam abertos
+   📱 Melhor experiência do usuário
+   ⚙️ Código mais robusto e menos propenso a erros
+
+═══════════════════════════════════════════════════════════
+    📋 COMO USAR AS MELHORIAS
+═══════════════════════════════════════════════════════════
+
+AUTO COZINHA:
+1. Abra o menu "Assistente de Fazenda"
+2. Clique em "Abrir Fogueira"
+3. Clique em "Verificar Receitas"
+4. Selecione a receita desejada
+5. Clique em "Iniciar Auto-Cozinhar"
+6. O bot irá:
+   ✓ Cozinhar automaticamente
+   ✓ Coletar quando pronto
+   ✓ Fechar a janela automaticamente
+   ✓ Repetir o ciclo
+
+AUTO BAÚS E CAPTCHAS:
+1. Ative o "Auto Baú" no menu Solver
+2. Abra um baú ou puzzle
+3. O bot irá:
+   ✓ Resolver automaticamente
+   ✓ Fechar o dialog automaticamente
+   ✓ Você pode continuar jogando
+
+SOLVER MANUAL:
+1. Abra o menu "Solucionador de Quebra-Cabeças"
+2. Abra um puzzle no jogo
+3. Clique no botão correspondente:
+   - "Resolver Quebra-Cabeça de Baú"
+   - "Resolver Outro Quebra-Cabeça"
+   - "Resolver Goblins"
+4. O dialog será fechado automaticamente
+
+═══════════════════════════════════════════════════════════
+    🔧 DETALHES TÉCNICOS
+═══════════════════════════════════════════════════════════
+
+ARQUIVOS MODIFICADOS:
+- bot.js do farm da fazenda.js
+
+FUNÇÕES CRIADAS/MODIFICADAS:
+- closePuzzleDialog() - Reformulada com 4 métodos
+- closeFirePitDialog() - Nova função
+- autoCook() - Otimizada com fechamento automático
+- solveChest() - Adicionado fechamento múltiplo
+- solveOtherPuzzle() - Adicionado fechamento múltiplo
+- solveGoblins() - Adicionado fechamento múltiplo
+
+VERSÃO:
+- Anterior: 1.7.5
+- Atual: 1.8.0
+
+═══════════════════════════════════════════════════════════
+    ✅ BENEFÍCIOS
+═══════════════════════════════════════════════════════════
+
+✓ Não precisa mais fechar dialogs manualmente
+✓ Auto cozinha funciona de forma totalmente automática
+✓ Melhor fluidez no jogo
+✓ Menos interrupções visuais
+✓ Maior confiabilidade do bot
+✓ Interface mais limpa
+✓ Feedback visual melhorado
+
+═══════════════════════════════════════════════════════════
+    📞 SUPORTE
+═══════════════════════════════════════════════════════════
+
+Criador: gu2121gg
+Versão: 1.8.0
+Data: Novembro 2024
+
+Para mais informações, abra o menu do bot e clique em
+"Informações de Atualização"
+
+═══════════════════════════════════════════════════════════
